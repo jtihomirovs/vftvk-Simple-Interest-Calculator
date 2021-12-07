@@ -1,22 +1,28 @@
 body {
     background-color:black;
     font-family: arial;
-    color:white}
+    color:white
+}
 
 h1 {
     color:grey;
-    font-family:verdana
+    font-family:verdana;
+    text-align: center;
 }
 
 
 .maindiv {
     background-color:white;
     color:black;
-    width: 300px;
+    width: 480px;
     padding: 20px;
     border-radius: 25px;
     margin: auto;
-    align: center
+}
+
+.innerdiv {
+    padding-right: 20%;
+    padding-left: 20%;
 }
 
 .highlighted{
