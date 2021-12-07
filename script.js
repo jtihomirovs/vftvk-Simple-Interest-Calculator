@@ -1,6 +1,7 @@
 // Function to compute the result
 function compute()
 {
+    var principalElement = document.getElementById("principal");
     var principal = document.getElementById("principal").value;
     var rate = document.getElementById("rate").value;
     var years = document.getElementById("years").value;
@@ -12,7 +13,7 @@ function compute()
     // If the user enters zero or negative values, show an alert "Enter a positive number"
     if (principal == "" || principal <= 0) {
         alert('Enter a positive number');
-        principal.focus();
+        principalElement.focus();
     } else {
         document.getElementById("result").innerHTML="<br\>If you deposit <span class='highlighted'>"+principal+"</span>,<br\>at an interest rate of <span class='highlighted'>"+rate+"%</span><br\>You will receive an amount of <span class='highlighted'>"+interest+"</span>,<br\>in the year <span class='highlighted'>"+year+"</span><br\>";
     }
